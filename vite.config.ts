@@ -9,4 +9,10 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  css: {
+    postcss: {
+      include: [/\.css$/],
+      exclude: [/\.js$/, /\.jsx$/, /\.ts$/, /\.tsx$/]
+    }
+  }
 })
